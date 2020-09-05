@@ -586,6 +586,8 @@ video {
   height: auto;
 }
 
+@import "./custom-base-styles.css";
+
 .container {
   width: 100%;
 }
@@ -613,6 +615,8 @@ video {
     max-width: 1280px;
   }
 }
+
+@import "./custom-components.css";
 
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
@@ -21234,22 +21238,15 @@ video {
           animation: bounce 1s infinite;
 }
 
-.main-container{
-  min-height: 100vh;
-  padding: 5rem;
-  --bg-opacity: 1;
-  background-color: #4299e1;
-  background-color: rgba(66, 153, 225, var(--bg-opacity))
-}
+@import "./custom-utilities.css";
 
-.card {
+.tw-header .img  {
+  padding: 1rem;
   --bg-opacity: 1;
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
-  padding: 1rem;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25)
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 0.25rem;
 }
 
 @media (min-width: 640px) {
@@ -103586,4 +103583,4 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
-}
+} 

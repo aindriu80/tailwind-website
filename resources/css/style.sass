@@ -1,14 +1,9 @@
-@tailwind base;
+@import "tailwindcss/base";
+@import "./custom-base-styles.css";
 
-@tailwind components;
+@import "tailwindcss/components";
+@import "./custom-components.css";
 
-@tailwind utilities;
+@import "tailwindcss/utilities";
+@import "./custom-utilities.css";
 
-
-.main-container{
-    @apply min-h-screen p-20 bg-blue-500
-}
-
-.card {
-    @apply bg-white p-4 rounded-t shadow-2xl
-}
