@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="resources/img/tailwind.png" />
-    <link rel="icon" type="image/png" href="resources/css/style.css" />
-    <link rel="stylesheet" href="resources/css/tailwind-output.css" />
-    <title>Tailwind CSS Landing Page</title>
-  </head>
 
-  <body>
-    <!-- Header -->
-    <div class="bg-indigo-700 p-4 flex justify-between items-center">
-      <!-- Left Side -->
-      <div class="flex items-center">
-        <img
-          src="resources/img/mountain.png"
-          width="50"
-          alt="Logo"
-          class="mr-2"
-        />
-        <a
-          href="#"
-          class="inline-block p-3 text-indigo-300 hover:text-indigo-100 mr-2"
-          >Home</a
-        >
-        <a
-          href="#"
-          class="inline-block p-3 text-indigo-300 hover:text-indigo-100 mr-2"
-          >About</a
-        >
-      </div>
-      <!-- Right Side -->
-      <div>
-        <a href="#" class="inline-block p-2 text-indigo-300 mr-2">Login</a>
-        <a
-          href="#"
-          class="inline-block py-2 px-2 text-yellow-700 bg-yellow-400 hover:bg-yellow-300 hover:text-yellow-800 rounded transition ease-in duration-150"
-          >Sign Up</a
-        >
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="resources/img/tailwind.png" />
+  <link rel="icon" type="image/png" href="resources/css/style.css" />
+  <link rel="stylesheet" href="resources/css/tailwind-output.css" />
+  <title>Tailwind CSS Landing Page</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="bg-gray-500 p-4 flex justify-between items-center">
+    <!-- Left Side -->
+    <div class="flex items-center">
+      <img src="resources/img/mountain.png" width="50" alt="Logo" class="mr-2" />
+      <a href="#" class="inline-block p-3 text-grey-300 hover:text-indigo-100 mr-2">Home</a>
+      <a href="#" class="inline-block p-3 text-grey-300 hover:text-indigo-100 mr-2">About</a>
     </div>
-    <!-- Hero -->
-    <!-- Features -->
-    <!-- Footer & Newsletter -->
-  </body>
+    <!-- Right Side -->
+    <div class="hidden md:block">
+      <a href="#" class="inline-block p-2 text-grey-300 hover:text-indigo-100 mr-2">Login</a>
+      <a href="#"
+        class="inline-block py-2 px-2 text-yellow-700 bg-yellow-400 hover:bg-yellow-300 hover:text-yellow-800 rounded transition ease-in duration-150">Sign
+        Up</a>
+    </div>
+  </div>
+
+
+  <!-- Hero -->
+  <div class="md:flex justify-between py-20 px-10 bg-gray-400 text-black-100">
+    <!-- Left -->
+    <div class="md:w-1/2 mb-10 md:mb-0">
+      <h1 class="text-2xl md:text-4xl lg:text-6xl mb-6">Welcome to the National Parks</h1>
+      <p class="mb-6">A breath of fresh air</p>
+      <a href="#" class="inline-block py-3 px-6 text-lg bg-gray-200 text-gray-800 hover:bg-gray-100 rounded mr-2">Learn
+        More</a>
+      <a href="#" class="inline-block py-3 px-6 text-lg bg-orange-400 text-orange-800 hover:bg-orange-300 rounded">Get
+        Started</a>
+    </div>
+    <!-- Right -->
+    <div class="md:w-1/2">
+      <img src="resources/img/forest-hero.webp" alt="Image of the forests" class="w-half rounded shadow-2">
+    </div>
+  </div>
+
+  <!-- Features -->
+  <!-- Footer & Newsletter -->
+</body>
+
 </html>
